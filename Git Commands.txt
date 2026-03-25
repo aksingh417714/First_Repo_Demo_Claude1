@@ -1,0 +1,50 @@
+ history
+    1  git --version
+    2  git config --global user.name "aksingh417714"
+    3  git config --global user.email "databricks.learn.0001@gmail.com"
+    4  git config --list
+    5  cd Desktop
+    6  mkdir my-first-git-repo
+    7  cd my-first-git-repo
+    8  git init
+    9  echo "hello, git!" > notes.txt
+   10  git status
+   11  git add notes.txt
+   12  git status
+   13  git commit -m "my first commit - added notes.txt"
+   14  git log --oneline
+   15  echo "learning git is fun" >> notes.txt
+   16  git status
+   17  git add .
+   18  git commit -m "added second line to notes.txt"
+   19  git log --oneline
+   20  git checkout -b feature/my-feature1
+   21  echo "this is my new feature1" >> notes.txt
+   22  git add .
+   23  echo "this is my new feature1" >> feature1.txt
+   24  git add .
+   25  git commit -m "added feature.txt on feature branch"
+   26  git log --oneline
+   27  git checkout master
+   28  ls
+   29  git checkout feature/my-feature1
+   30  git checkout master
+   31  git checkout feature/my-feature1
+   32  cat notes.txt
+   33  git checkout master -- notes.txt
+   34  cat notes.txt
+   35  git status
+   36  git commit -m "fixed accidental changes to notes.txt"
+   37  git log --oneline
+   38  git checkout master
+   39  git merge feature/my-feature1
+   40  ls
+   41  cat notes.txt
+   42  cat feature1.txt
+   43  git log --oneline
+   44  git branch -d feature/my-feature1
+   45  git branch
+   46  git remote add origin https://github.com/aksingh417714/First_Repo_Demo_Claude1.git
+   47  git remote -v
+   48  git push -u origin master
+   49  history
